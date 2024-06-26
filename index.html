@@ -1,0 +1,395 @@
+
+<!DOCTYPE html> <!-- Déclaration du type de document HTML -->
+<!-- Début du document HTML avec langue définie en français -->
+<html lang="fr">
+
+<!-- Début de l'en-tête du document -->
+<head>
+    <!-- Définition du jeu de caractères pour le document -->
+    <meta charset="utf-8">
+    <!-- Configuration de la mise en page responsive pour les appareils mobiles -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Description du contenu de la page pour les moteurs de recherche -->
+    <meta name="description" content="Création d'une page web pour un festival de jeux vidéos de 2024 en utilisant HTML, CSS et JavaScript.">
+    <!-- Auteur de la page -->
+    <meta name="author" content="Jean-Claude Lugo, formateur référent chez MODE 83">
+    <!-- Informations de droit d'auteur -->
+    <meta name="copyright" content="Jean-Claude Lugo">
+    <!-- Propriété Open Graph pour le titre de la page, utilisé par les réseaux sociaux -->
+	<meta property="og:title" content="Festival du jeu vidéo 2024">
+    <!-- Propriété Open Graph pour la description de la page, utilisée par les réseaux sociaux -->
+    <meta property="og:description" content="Création d'une page web pour un festival de jeux vidéos de 2024 en utilisant HTML, CSS et JavaScript.">
+    <!-- Propriété Open Graph pour l'image de la page, utilisée par les réseaux sociaux -->
+    <meta property="og:image" content="URL de votre image">
+    <!-- Propriété Open Graph pour l'URL de la page, utilisée par les réseaux sociaux -->
+    <meta property="og:url" content="URL de votre page">
+    <!-- Propriété Open Graph pour le type de contenu, ici un site web -->
+    <meta property="og:type" content="website">
+    <!-- Propriété Twitter pour le type de carte à utiliser (grand résumé avec image) -->
+	<meta name="twitter:card" content="summary_large_image">
+    <!-- Propriété Twitter pour le site associé -->
+    <meta name="twitter:site" content="@username">
+    <!-- Propriété Twitter pour le titre de la carte -->
+    <meta name="twitter:title" content="Festival du jeu vidéo 2024">
+    <!-- Propriété Twitter pour la description de la carte -->
+    <meta name="twitter:description" content="Création d'une page web pour un festival de jeux vidéos de 2024 en utilisant HTML, CSS et JavaScript.">
+    <!-- Propriété Twitter pour l'image de la carte -->
+    <meta name="twitter:image" content="URL de votre image">
+    <!-- Définition de la couleur du thème du navigateur -->
+    <meta name="theme-color" content="#ffd700">
+    <!-- Directives pour les moteurs de recherche : indexer la page et suivre les liens -->
+    <meta name="robots" content="index, follow">
+	<!-- Directives pour Googlebot : indexer la page et suivre les liens -->
+    <meta name="googlebot" content="index, follow">
+    
+    <!-- Lien vers l'icône du site en format PNG (32x32) -->
+    <link rel="icon" type="image/png" href="images/logo.png" sizes="32x32">
+    <!-- Lien vers l'icône du site en format PNG (16x16) -->
+    <link rel="icon" type="image/png" href="images/logo.png" sizes="16x16">
+    <!-- Lien vers l'icône du site en format ICO -->
+    <link rel="icon" type="image/x-icon" href="images/logo.png">
+
+    <!-- Lien vers la feuille de style CSS externe -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Titre de la page affiché dans l'onglet du navigateur -->
+    <title> Organisation d'un festival du jeux vidéos du 2024 </title>
+
+    
+
+</head>
+
+<!-- Début du corps du document -->
+<body>
+
+    <!-- Début de l'en-tête de la page -->
+    <header>
+
+        <!-- Début du conteneur pour l'en-tête -->
+        <div class="header-container">
+            <!-- Image du logo du festival -->
+            <img src="images/logo_DGF.png" alt="Logo du Festival" class="logo">
+            <!-- Titre principal de la page avec lien vers l'accueil -->
+            <h1><a href="index.html">DGF 2024</a></h1>
+            <!-- Bouton pour la navigation mobile -->
+            <button class="menu-toggle" aria-label="Navigation sur appareils mobiles"> 
+                ☰
+            </button>
+        </div>
+        <!-- Fin du conteneur pour l'en-tête -->
+
+        <!-- Début de la navigation principale -->
+        <nav>
+            <!-- Liste des liens de navigation -->
+            <ul>
+                <!-- Lien vers la section programme -->
+                <li><a href="#programme">Programme</a></li>
+                <!-- Lien vers la section intervenants -->
+                <li><a href="#intervenants">Intervenants</a></li>
+                <!-- Lien vers la section inscription, avec une classe pour le styliser -->
+                <li><a href="#lots-a-gagner">Lots</a></li>
+                <li><a href="#ou-nous-trouver">Lieu</a></li>
+                <li class="inscription"><a href="#inscription">Inscription</a></li>
+            </ul>
+        </nav>
+        <!-- Fin de la navigation principale -->
+
+    </header>
+    <!-- Fin de l'en-tête de la page -->
+
+
+
+    <!-- Section vidéo de présentation -->
+    <section id="video">
+        <!-- Intégration d'une vidéo avec contrôles, lecture automatique, boucle et son coupé -->
+        <video controls autoplay loop muted>
+            <!-- Source de la vidéo en format MP4 -->
+            <source src="videos/video1.mp4" type="video/mp4">
+            <!-- Sous-titres pour la vidéo -->
+            <track src="videos/sous-titres1.vtt" kind="subtitles" srclang="fr" label="Français">
+            <!-- Message affiché si le navigateur ne supporte pas la vidéo -->
+            Votre navigateur ne supporte pas la vidéo.
+        </video>
+
+        <a href="https://draguignan-gaming.gg/" target="_blank" class="video-button" title="Ciquez ici pour en savoir plus sur cet événement">
+           En savoir plus
+        </a>
+
+        <!-- Lien pour télécharger la description textuelle de la vidéo -->
+        <p>Téléchargez la <a href="descriptions/description1.txt" download title="Cliquez ici pour télécharger la description de cette vidéo">Description textuelle</a> de cette vidéo.</p>
+    </section>
+
+    <!-- Section du programme de l'événement -->
+    <section id="programme">
+        
+        <!-- Titre de la section programme -->
+        <h2>
+            Programme journalier de l'événement qui se déroulera le 9 et 10 Novembre 2024
+        </h2>
+        
+        <!-- Tableau du programme avec les horaires, activités et emplacements -->
+        <table>
+            <!-- En-tête du tableau -->
+            <thead>
+                <tr>
+                    <!-- Colonne pour les horaires -->
+                    <th>Heure</th>
+                    <!-- Colonne pour les activités -->
+                    <th>Activité</th>
+                    <!-- Colonne pour les emplacements -->
+                    <th>Emplacement</th>
+                </tr>
+            </thead>
+            <!-- Corps du tableau -->
+            <tbody>
+                <!-- Ligne pour l'ouverture des portes -->
+                <tr>
+                    <td>09:00</td>
+                    <td>Ouverture des portes</td>
+                    <td>Entrée principale</td>
+                </tr>
+                <!-- Ligne pour la compétition Fortnite -->
+                <tr>
+                    <td>10:00</td>
+                    <td>Compétition Fortnite</td>
+                    <td>Salle A</td>
+                </tr>
+                <!-- Ligne pour la pause déjeuner -->
+                <tr>
+                    <td>12:00</td>
+                    <td>Pause déjeuner</td>
+                    <td>Espace restauration</td>
+                </tr>
+                <!-- Ligne pour l'atelier de développement de jeux -->
+                <tr>
+                    <td>14:00</td>
+                    <td>Atelier de développement de jeux</td>
+                    <td>Salle B</td>
+                </tr>
+                <!-- Ligne pour le tournoi de League of Legends -->
+                <tr>
+                    <td>16:00</td>
+                    <td>Tournoi de League of Legends</td>
+                    <td>Salle C</td>
+                </tr>
+                <!-- Ligne pour les jeux vidéos de clôture -->
+                <tr>
+                    <td>18:00</td>
+                    <td>Jeux vidéos de clôture</td>
+                    <td>Grande scène</td>
+                </tr>
+            </tbody>
+        </table>
+    
+    <!-- Fin de la section programme -->
+    </section>
+
+    <!-- Section des intervenants avec un carrousel d'images -->
+    <section id="intervenants">
+        <!-- Titre de la section intervenants -->
+        <h2>Informations sur les intervenants, clic sur chacune des images pour en savoir plus</h2>
+        <!-- Conteneur du carrousel -->
+        <div class="carousel">
+            <!-- Conteneur des images du carrousel -->
+            <div class="carousel-image">
+            <div class="slides">
+                <!-- Slide 1 avec lien externe et détails -->
+                <div class="slide">
+                    <a href="https://www.youtube.com/channel/UCAW-NpUFkMyCNrvRSSGIvDQ" target="_blank" title="Cliquez ici pour en savoir plus">
+                        <!-- Image de l'intervenant 1 -->
+                        <img src="images/nija.jpg" alt="Intervenant 1">
+                    </a>
+                    <!-- Légende pour l'intervenant 1 -->
+                    <div class="caption">Intervenant 1 - Détails</div>
+                </div>
+                <!-- Slide 2 -->
+                <div class="slide">
+                    <!-- Image de l'intervenant 2 -->
+                    <img src="images/femme1.jpg" alt="Intervenant 2">
+                    <!-- Légende pour l'intervenante 2 -->
+                    <div class="caption">Intervenante 2 - Détails</div>
+                </div>
+                <!-- Slide 3 -->
+                <div class="slide">
+                    <!-- Image de l'intervenant 3 -->
+                    <img src="images/femme2.jpg" alt="Intervenant 3">
+                    <!-- Légende pour l'intervenante 3 -->
+                    <div class="caption">Intervenante 3 - Détails</div>
+                </div>
+                <!-- Slide 4 -->
+                <div class="slide">
+                    <!-- Image de l'intervenant 4 -->
+                    <img src="images/homme2.jpg" alt="Intervenant 4">
+                    <!-- Légende pour l'intervenant 4 -->
+                    <div class="caption">Intervenant 4 - Détails</div>
+                </div>
+                <!-- Slide 5 -->
+                <div class="slide">
+                    <!-- Image de l'intervenant 5 -->
+                    <img src="images/femme3.jpg" alt="Intervenant 5">
+                    <!-- Légende pour l'intervenante 5 -->
+                    <div class="caption">Intervenante 5 - Détails</div>
+                </div>
+                <!-- Slide 6 -->
+                <div class="slide">
+                    <!-- Image de l'intervenant 6 -->
+                    <img src="images/homme3.jpg" alt="Intervenant 6">
+                    <!-- Légende pour l'intervenant 6 -->
+                    <div class="caption">Intervenant 6 - Détails</div>
+                </div>
+            </div>
+        </div>
+            <!-- Bouton précédent du carrousel -->
+            <button class="prev">⟨</button>
+            <!-- Bouton suivant du carrousel -->
+            <button class="next">⟩</button>
+        </div>
+    </section>
+    <!-- Section des intervenants avec un carrousel d'images -->
+
+
+
+
+<!-- Section de la galerie d'images des lots à gagner -->
+<section id="lots-a-gagner">
+    <h2>Lots à gagner pendant le festival 2024 le 9 et 10 novembre</h2>
+    <div class="gallery">
+        <!-- Image 1 -->
+        <div class="gallery-item">
+            <img src="images/lot1.jpg" alt="Lot 1" class="gallery-image" onclick="openModal(this)" width="300" height="200">
+            <div class="caption">Nitendo Switch trois modes d'utilisation</div>
+        </div>
+        <!-- Image 2 -->
+        <div class="gallery-item">
+            <img src="images/lot2.jpg" alt="Lot 2" class="gallery-image" onclick="openModal(this)" width="300" height="200">
+            <div class="caption">Manette sans fil Xbox - Édition spéciale</div>
+        </div>
+        <!-- Image 3 -->
+        <div class="gallery-item">
+            <img src="images/lot3.jpg" alt="Lot 3" class="gallery-image" onclick="openModal(this)" width="300" height="200">
+            <div class="caption">Nitendo Switch - Modèle OLED</div>
+        </div>
+        <!-- Image 4 -->
+        <div class="gallery-item">
+            <img src="images/lot4.jpg" alt="Lot 4" class="gallery-image" onclick="openModal(this)" width="300" height="200">
+            <div class="caption">Console de jeu Attary</div>
+        </div>
+        <!-- Image 5 -->
+        <div class="gallery-item">
+            <img src="images/lot5.jpg" alt="Lot 5" class="gallery-image" onclick="openModal(this)" width="300" height="200">
+            <div class="caption">Sony PlayStation 2</div>
+        </div>
+        <!-- Image 6 -->
+        <div class="gallery-item">
+            <img src="images/lot6.jpg" alt="Lot 6" class="gallery-image" onclick="openModal(this)" width="300" height="200">
+            <div class="caption">PlayStation 2, la deuxième console de Sony</div>
+        </div>
+    </div>
+
+    <!-- Modal pour afficher les images en grand format -->
+    <div id="imageModal" class="modal">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <img class="modal-content" id="modalImage">
+    </div>
+</section>
+
+
+
+    <!-- Section d'inscription des participants -->
+    <section id="inscription">
+        <!-- Titre de la section inscription -->
+        <h2>Inscription des participants</h2>
+        <!-- Formulaire d'inscription avec champs requis -->
+        <form>
+            <!-- Label pour le champ prénom -->
+            <label for="prenom" style="color: #000; font-weight: bold; cursor: pointer;">
+                Prénom : <span style="color: red;">*</span>
+            </label>
+            <!-- Champ de saisie pour le prénom -->
+            <input type="text" placeholder="Entrez votre prénom et votre nom ici..." required id="prenom">
+            <!-- Label pour le champ adresse mail -->
+            <label for="email" style="color: #000; font-weight: bold; cursor: pointer;">
+                Adresse mail : <span style="color: red;">*</span>
+            </label>
+            <!-- Champ de saisie pour l'adresse mail -->
+            <input type="email" placeholder="Entrez votre adersse mail ici..." required id="email">
+            <!-- Bouton de soumission du formulaire -->
+            <button type="submit" aria-label="bouton de soumission">Inscrivez-vous</button>
+        </form>
+    </section>
+
+    <!-- Section vidéo de l'événement de l'année précédente -->
+    <section id="last-year-video">
+        <!-- Titre de la section vidéo de l'année précédente -->
+        <h2>Revivez le dernier festival qui a eu lieu en 2023</h2>
+        <!-- Intégration d'une vidéo avec contrôles, lecture automatique, boucle et son coupé -->
+        <video controls autoplay loop muted>
+            <!-- Source de la vidéo en format MP4 -->
+            <source src="videos/video2.mp4" type="video/mp4">
+            <!-- Sous-titres pour la vidéo -->
+            <track src="videos/sous-titres2.vtt" kind="subtitles" srclang="fr" label="Français">
+            <!-- Message affiché si le navigateur ne supporte pas la vidéo -->
+            Votre navigateur ne supporte pas la vidéo.
+        </video>
+        <!-- Lien pour télécharger la description textuelle de la vidéo -->
+        <p>Téléchargez la <a href="descriptions/description2.txt" download title="Cliquez ici pour télécharger la description de cette vidéo">Description textuelle</a> de cette vidéo.</p>
+    </section>
+
+
+    
+<!-- Début de la section 'Où nous trouver ?' -->
+<section id="ou-nous-trouver">
+    <h2>Où nous trouver ?</h2>
+    <!-- Début du conteneur pour la disposition des div l'un à côté de l'autre -->
+    <div class="container">
+        <!-- Carte Google à gauche -->
+        <div class="map-container">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2892.9047255971172!2d6.4576884756926365!3d43.52517946070221!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12ceac7a8af8465d%3A0x14df09a82f6f34e9!2sBd%20Saint-Exup%C3%A9ry%2C%2083300%20Draguignan!5e0!3m2!1sfr!2sfr!4v1718797026499!5m2!1sfr!2sfr" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Situation géographique du festival"></iframe>
+        </div>
+        <!-- Coordonnées du lieu à droite -->
+        <div class="contact-info">
+            <h2>Nos coordonnées</h2>
+            <p>Adresse : Boulevard St Exupéry 83300 Draguignan</p>
+            <p>Téléphone : <a href="tel:0494569875">04 94 56 98 75</a></p>
+            <p><a href="mailto:contact@festivaljeuvideo2024.com">contact@festivaljeuvideo2024.com</a></p>
+        </div>
+    </div>
+    <!-- Fin du conteneur pour la disposition des div l'un à côté de l'autre -->
+</section>
+<!-- Fin de la section 'Où nous trouver ?' -->
+
+
+    
+    <!-- Pied de page avec le copyright et icônes des réseaux sociaux -->
+    <footer>
+
+        <div class="footer-container">
+            <div class="footer-text">
+               <p>© 2024 Festival du jeu vidéo 2024</p>
+            </div>
+
+            <div class="social-icons">
+                <a href="#"><img src="images/facebook.png" alt="Faceboock"></a>
+                <a href="#"><img src="images/twitter.png" alt="TwitterX"></a>
+                <a href="#"><img src="images/instagram.png" alt="Instagram"></a>
+                <a href="#"><img src="images/linkedin.png" alt="LinkedIn"></a>
+            </div>
+
+        </div>
+
+    </footer>
+    <!-- Pied de page avec le copyright et icônes des réseaux sociaux -->
+
+    <!-- Bouton pour remonter en haut -->
+
+     <button id="scrollToTopBtn" title="Cliquez ici pour revenir en haut">↑</button>
+    <!-- Bouton pour remonter en haut -->
+
+<!-- Inclusion du fichier JavaScript externe -->
+<script src="js/script.js"></script>
+
+<!-- Fin du corps du document -->
+</body>
+
+<!-- Fin du document HTML -->
+</html>

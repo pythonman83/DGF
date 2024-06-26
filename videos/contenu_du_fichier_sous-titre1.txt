@@ -1,0 +1,31 @@
+WEBVTT
+
+00:00:00.000 --> 00:00:03.000
+Bienvenue au Festival du Jeu Vidéo 2024 !
+
+00:00:03.000 --> 00:00:07.000
+Rejoignez-nous pour un événement passionnant les 9 et 10 novembre 2024.
+
+00:00:07.000 --> 00:00:10.000
+Découvrez les différentes activités prévues.
+
+00:00:10.000 --> 00:00:14.000
+Compétitions, ateliers, et bien plus encore !
+
+00:00:14.000 --> 00:00:18.000
+Compétition de Fortnite, Tournoi de League of Legends.
+
+00:00:18.000 --> 00:00:21.000
+Ateliers de développement de jeux.
+
+00:00:21.000 --> 00:00:25.000
+Témoignages des intervenants et des participants.
+
+00:00:25.000 --> 00:00:30.000
+Inscrivez-vous maintenant pour ne pas manquer cet événement unique !
+
+00:00:30.000 --> 00:00:33.000
+Pour plus d'informations, visitez notre site web.
+
+00:00:33.000 --> 00:00:36.000
+À bientôt au Festival du Jeu Vidéo 2024 !
